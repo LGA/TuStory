@@ -1,0 +1,113 @@
+
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN"
+"http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html>
+<head>
+<title>200 Jahre TU - MyQuest</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+
+<!--  jQuery -->
+
+<link rel="stylesheet" href="jQuery/demos/css/themes/default/jquery.mobile-1.4.2.min.css">
+
+
+
+<script src="jQuery/demos/js/jquery.js"></script>
+
+<script src="jQuery/demos/js/jquery.mobile-1.4.2.min.js"></script>
+
+
+</head>
+<body>
+<div class="main_bg">
+<div class="container">
+<div class="main">
+
+	<div class="col-md-8 span_of_2"><!-- start span1_of_2 -->
+		<div class="col-md-6 span1_of_1"><!-- start span1_of_3 style1 -->
+			<div class="grid1_of_1">
+				<a href="index.html"><img src="images/TU200_header.png" alt="" class="img-responsive" /></a>
+				<h2>My Quest</h2>
+				<p>Gehe zum Karlsplatz und mach ein Foto von dir mit einem Kaffee in der Hand</p>
+			</div>
+			<ul class="icon_list list-unstyled">
+				<li><a href="quest.html"><i class="fa fa-heart-o"><img src="images/icon4.jpg" alt=""/></i></a></li>
+				<li><a href="story.html"><i class="fa fa-eye"><img src="images/icon2.jpg" alt=""/></i></a></li>
+
+			</ul>
+			
+			<div class="grid1_of_list1" id="uploadedImg">	
+				<div class="grid1_of_2">
+					<h2 class="pull-left">Dein Bild</h2>
+					<div class="clear"></div>
+				</div>	
+				<img src="images/pic1.jpg" alt="" class="img-responsive" />
+			</div>
+			<br>
+			<div class="grid2_of_1" id="startStory">
+				<form>
+			        <fieldset data-role="controlgroup">
+				        <legend>Deine Geschichte beginnt mit</legend>
+				        <input name="radio-choice-v-2" id="radio-choice-v-2a" value="on" checked="checked" type="radio">
+				        <label for="radio-choice-v-2a">Es war einmal ein ...</label>
+				        <input name="radio-choice-v-2" id="radio-choice-v-2b" value="off" type="radio">
+				        <label for="radio-choice-v-2b">Das Glück, das dir am meisten schmeichelt ...</label>
+				        <input name="radio-choice-v-2" id="radio-choice-v-2c" value="other" type="radio">
+				        <label for="radio-choice-v-2c">Es ist nicht genug zu wissen - man muss auch ...</label>
+			    	</fieldset>
+			    	
+			    	<label for="textarea">Führe den Satz zu Ende</label>
+						<textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+				</form>
+			</div>
+			
+			
+		</div>
+
+		<br>
+		<div class="col-md-6 span1_of_2"><!-- start span1_of_3 style2 -->
+			<div class="grid2_of_1" id="uploadForm">
+				<div class="signin_form">
+					<h4>Bild hochladen</h4>
+					<form>
+						<input type="button" value="Bild wählen" data-role="none" class="bg1"/>
+						<input type="button" id="startUpload" data-role="none" value="Hochladen" class="bg2"/>
+					</form>
+				</div>
+			</div>
+			<div class="clear"></div>
+			
+
+		<br>
+		
+		</div>
+	</div><!-- end span1_of_2 -->	
+<br><br><br>
+
+</div>
+</div>
+</div>
+
+
+<script>
+	$( "#startUpload" ).click(function() {
+		$( "#uploadForm" ).fadeOut( "slow", function() {
+			$( "#uploadedImg" ).fadeIn( "slow", function() {
+			});
+			$( "#startStory" ).fadeIn( "slow", function() {
+			});
+		});
+	});
+</script>
+
+
+</body>
+</html>
